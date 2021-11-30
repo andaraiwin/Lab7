@@ -12,12 +12,12 @@ int main(){
     //Write your code here.
 	cout << "Please input GPA: ";
 	cin >> GPA;
-		while(i < 9){
+		while(i < 10){
 			if(gpa[i] >= GPA){
 				cout << id[i] << " " << name[i] << " " << gpa[i] <<"\n";
 			}
 		i++;
 		}
-		
+
 	return 0;
 }
