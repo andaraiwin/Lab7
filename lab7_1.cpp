@@ -3,7 +3,7 @@
 
 using namespace std;
 
-string func1(string x){
+string reverseText(string x){
 	int i = 0, L = x.size();
 	string y = "";
 	while(i < L){
@@ -33,9 +33,18 @@ string func3(string x){
 	return y;	
 }
 
-int main(){
-    cout >> "Input text: "
-    cout >> "Reversed text: "
-    cout >> "Palindrome: "
+int main()
+{
+	string text1;
+    	cout << "Input text: ";
+		cin >> text1;
+    	cout << "Reversed text: " << reverseText(text1);
+
+			if(func3(text1) == reverseText(func3(text1)))
+			{
+				cout << "\nPalindrome: Yes";	
+			}else{
+				cout << "\nPalindrome: No";
+			}
     return 0;
 }
